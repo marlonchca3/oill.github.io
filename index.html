@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oil Price Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Oil Price & Profit Calculator</h2>
+        
+        <div class="input-group">
+            <label for="materiaPrima">Cost per Barrel (USD):</label>
+            <input type="number" id="materiaPrima" step="0.01" required placeholder="Enter cost per barrel...">
+        </div>
+
+        <div class="input-group">
+            <label for="tipoCreudo">Crude Oil Type:</label>
+            <select id="tipoCreudo">
+                <option value="light">Light Crude</option>
+                <option value="medium">Medium Crude</option>
+                <option value="heavy">Heavy Crude</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="margenGanancia">Profit Margin (%):</label>
+            <input type="number" id="margenGanancia" required placeholder="Enter margin...">
+        </div>
+
+        <div class="input-group">
+            <label for="impuesto">Tax Rate (%):</label>
+            <input type="number" id="impuesto" value="20" required>
+        </div>
+
+        <div class="input-group">
+            <label for="ventasEsperadas">Estimated Barrels for Sale:</label>
+            <input type="number" id="ventasEsperadas" required placeholder="Number of barrels...">
+        </div>
+
+        <button onclick="calculateFinalPrice()">Calculate Price</button>
+
+        <div id="resultados">
+            <h3>Results:</h3>
+            <p id="costoPrima"></p>
+            <p id="tipoSeleccionado"></p>
+            <p id="margenCalculado"></p>
+            <p id="subtotal"></p>
+            <p id="impuestoCalculado"></p>
+            <p id="precioFinal"></p>
+            <h3>Sales Projection:</h3>
+            <p id="proyeccionVentas"></p>
+            <p id="gananciaTotal"></p>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html> 
