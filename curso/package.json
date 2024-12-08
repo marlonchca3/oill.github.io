@@ -1,0 +1,15 @@
+{
+  "name": "curso",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "ecmasript\u001b[D\u001b[D\u001b[D\u001b[Dc\u001b[3~\u001b[3~\u001b[3~\u001b[3~\u001b[3~ript"
+  ],
+  "author": "Marlon Chuquino",
+  "license": "MIT",
+  "description": ""
+}
